@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajvardhan Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/1b30b8cf7f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/RAJVARDHAN (2).png" class="logo" alt="Logo img">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>CSE Student</p>
+            <h1 class="text-3xl font-bold underline">Hi, I'm <span>Rajvardhan</span> <br> Patil from KITCoEK</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ____________about______________ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_20240517_125117.jpg" alt="profile image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a dedicated and enthusiastic Computer Science and Engineering student, I have consistently sought out opportunities to expand my knowledge and skills in the fields of AI, machine learning, data science, and image processing. My academic journey, coupled with practical experiences, has equipped me with a robust technical foundation and a passion for innovation.
+                <br>
+                I am passionate about leveraging my skills and experiences to contribute to innovative projects and drive technological advancements. If you’re looking for a dedicated and skilled individual with a strong foundation in computer science and engineering,</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Developing interactive web applications</li>
+                        <li><span>Data Analytics</span><br>Extracting intuitive insights from data</li>
+                        <li><span>AIML</span><br>Developing machine learing and deep learning models</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Feb 2024 - Jun 2024</span><br>AI Engineer Intern, Rapid Technologies</li>
+                        <li><span>2022 - 2023</span><br>Associate Head, E-cell KITCoEK</li>
+                        <li><span>2023</span><br>Volunteer, Abhigyan 2023</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>B.Tech. CSE(Data Science) at KITCoEK with GCPA: 9.1</li>
+                        <li><span>2021</span><br>HSC with 90%</li>
+                        <li><span>2019</span><br>SSC with 91%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ____________services______________ -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I am able to provide responsive, interactive and scalable websites which will boost you business very rapidly</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analytics</h2>
+                <p>I am able to extract useful insights from provided sructured or unstructured data which help to make data driven decisions </p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hexagon-nodes-bolt"></i>
+                <h2>AIML</h2>
+                <p>I am able to develope custom machine learning and deep learning models for predictive and classification tasks in any domain</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- ____________portfolio______________ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project_background.png" alt="img_not_found">
+                <div class="layer">
+                    <h3>Blockchain based Certificate generation and validation</h3>
+                    <p>Developed a Dapp which provide a secure and tamper-proof way to generate and validate digital certificates. This
+                    include custom Smart Contract to automate the authenticity management of certificate supported by blockchain.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project_background.png" alt="img_not_found">
+                <div class="layer">
+                    <h3>IPL match Result Prediction</h3>
+                    <p>Developed a Web-App empowered with Machine Learning to calculate the winning probability of both teams based
+                    on historical data and real time attributes like home stadium, score, wickets, overs, target, etc.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project_background.png" alt="img_not_found">
+                <div class="layer">
+                    <h3> Design and Development of Deep Learning Architecture for grading of Microscopy Images</h3>
+                    <p> The project was accomplished with innovative SE-ResNet model for grading of Kidney histopathology
+                    images with novel addition of Squeeze and Excitation block (SE) which enhance the feature mapping between the
+                    layers of the traditional ResNet.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- ____________contact______________ -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> rajvardhan2273@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9307834969</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rajvardhan-patil-747a0422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rajvardhanSG"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/u/rajvardhanSG/"><i class="fa-solid fa-code"></i></a>
+                </div>
+                <a href="images/Rajvardhan_G_Patil_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+<script src="index.js" defer></script>
+
+</body>
+</html>
