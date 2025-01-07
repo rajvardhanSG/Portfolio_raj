@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bgimg1': "url('images/Picsart_25-01-01_22-25-29-215.png')",
-        'bgimg2': "url('images/Picsart_25-01-01_22-22-57-746.png')",
+        'small_screen_img': "url('images/Picsart_25-01-01_22-25-29-215.png')",
+        'full_screen_img': "url('images/Picsart_25-01-01_22-22-57-746.png')",
       },
       colors: {
           'custom-green': '#61b752',
